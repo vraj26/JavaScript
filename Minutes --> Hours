@@ -1,0 +1,12 @@
+//amount of minutes
+let min = 150;
+//converts into hours
+let minhour = (min / 60);
+//rounds the number in minhour down to the nearest integer
+let hours = Math.floor(minhour);
+//subtracts number from minhour with number from hour and multiply it by 60 to get minutes
+let hourmin = (minhour - hours) * 60;
+//rounds the number from hourmin to nearest integer
+let hm = Math.round(hourmin);
+//prints out the time which was converted from minutes
+console.log(hours + ' : ' + hm);
