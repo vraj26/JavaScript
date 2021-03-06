@@ -1,0 +1,4 @@
+// when i is less then 5001, i is added by 5, then prints 5
+for(let i = 0; i < 5001; i = i + 5){
+  console.log(i);
+}
