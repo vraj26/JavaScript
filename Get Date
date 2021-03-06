@@ -1,0 +1,26 @@
+//needed to get new date and current date
+var t = new Date();
+var d = t.getDay();
+//made an array for printing purposes
+var weekday = [
+  "Sunday",
+  "Monday",
+  "Tuesday",
+  "Wednesday",
+  "Thursday",
+  "Friday",
+  "Saturday"
+]
+//prints out the current date
+console.log('The Current Date is ' + weekday[d] + '.')
+
+//if the day is friday, print Have a nice weekend
+if(weekday[d] === "Friday"){
+  console.log("Have a nice weekend!")
+} 
+//this prints out Have a nice (the current day)
+else if (weekday[d] === weekday[d]){
+  console.log('Have a nice ' + weekday[d] + '!')
+} else {
+  console.log("Have a nice day!")
+}
