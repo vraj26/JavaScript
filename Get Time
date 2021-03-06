@@ -1,0 +1,58 @@
+//gets Date
+const today = new Date();
+const day = today.getDay();
+//gets hours
+var h = today.getHours();
+//gets minutes
+const m = today.getMinutes();
+//gets seconds
+const s = today.getSeconds();
+  //code for PM or AM
+  let p = (h >= 12)? " PM ":" AM ";
+//
+  h = (h >= 12)? h - 12: h;
+
+  //if statement to ensure when its noon
+  if (h===0 && p===' PM ') { 
+    if (m===0 && s===0) { 
+       h=12;
+       p=' Noon';
+    }
+    else { 
+      h=12;
+      p=' PM';
+     } 
+  } 
+
+//if statment to ensure when its Midnight
+  if (h===0 && p===' AM ') { 
+    if (m===0 && s===0) { 
+      h=12;
+      p=' Midnight';
+    } 
+
+    else { 
+      h=12;
+      p=' AM';
+    } 
+  } 
+  
+  //if statement to print Good Morning
+  if(h < 10){
+    console.log("Good Morning!!");
+  } 
+  //else if statement to print Good Afternoon
+  else if (h >= 14 && hour <= 17){
+    console.log("Good Afternoon.");
+  }
+  //else if statement to print Good Evening
+  else if (h > 17){
+    console.log("Good Evening");
+  }
+  else {
+    console.log("Good Day!")
+  }
+//prints the current time
+console.log(`Current Time : ${h}${p} : ${m} : ${s}`);
+
+
