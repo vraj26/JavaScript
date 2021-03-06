@@ -1,0 +1,32 @@
+//Declare Global Variables
+var mainCourse
+var sideDish1
+var sideDish2
+var sideDish3
+
+console.log("Welcome to our restaraunt...")
+
+//Prompt User for Option, User should choose number
+mainCourse = prompt("Which one of these delicasies would you like, Eggs, Pancakes, Waffles and Oatmeal: ");
+
+//if, else if statements for whether the customer selects their initial choices, I couldn't use logical operators for some reason
+if(mainCourse === "Eggs"){
+  sideDish1 = prompt("Eggs are delicious, What side choice do you want with them?: Wheat Toast, Sour Dough Bread, or Rye Toast and Pancakes")
+
+//This will tell the customer on what they ordered
+  console.log('Thank you, Your order is: ' + mainCourse + ' and ' + sideDish1 + '.' )
+} 
+else if(mainCourse === "Pancakes"){
+  sideDish2 = prompt("What a great choice, What topping would you like on them?: Syrup, Strawberries, or Powdered Sugar");
+
+  console.log('Thank you, Your order is: ' + mainCourse + ' and ' + sideDish2 + 'as the topping.');
+} 
+else if(mainCourse === "Waffles and Oatmeal"){
+  sideDish2 = prompt("What a great choice, What topping would you like on them?: Syrup, Strawberries), or Powdered Sugar");
+
+    console.log('Thank you, Your order is: ' + mainCourse + ' and ' + sideDish2 + ' as the topping.');
+} 
+else {
+  console.log("We don't serve that breakfast hear!")
+}
+
