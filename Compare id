@@ -1,0 +1,14 @@
+//arrays for number id
+const ids = ['a13', '4a3', 'fg12', 'r2', 'fe3'];
+//declaring variable for how many id are wrong
+let countWrong = 0;
+
+//for loop for variable i in ids array
+for(i = 0; i < ids.length; i++){
+  //if statement, if the length of the elements in the ids array is not 3, then add 1 the countWrong
+  if( ids[i].length != 3){
+    countWrong++
+  }
+}
+//prints out the amount of wrong counts inside the array of ids
+console.log(countWrong);
