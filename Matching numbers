@@ -1,0 +1,21 @@
+//declaring 2 arrays which is to be later compared
+const arrayA = [1, 5, 12, 7, 8];
+const arrayB = [3, 5, 1, 7, 8];
+//variable to keep count of matching elements
+let numberMatching = 0;
+
+//for loop for arrayA
+for (let i = 0; i < arrayA.length; i++) {
+//nested for loop for array B
+  for (let j = 0; j < arrayB.length; j++) {
+
+    //comparing the elements of the 2 arrays
+    if(arrayA[i] === arrayB [j]) {
+      //if elements match, add 1 to numberMatching
+      numberMatching++
+    }
+  }
+}
+
+//prints how many elements in the 2 arrays are matching
+console.log('The number of matching elements in the arrays is ' + numberMatching)
