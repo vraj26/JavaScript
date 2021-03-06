@@ -1,0 +1,23 @@
+//decalres the weight
+let weight = 240;
+
+//if weight is equal to and above 205 and weight is equal to and below 265, then print heavyweight
+if(weight >= 205 && weight <= 265){
+  console.log("HeavyWeight");
+} 
+//if weight is equal to and above 185 and weight is equal to and below 204, then print heavyweight
+else if(weight >= 185 && weight <= 204){
+  console.log("Light Heavyweight");
+} 
+//if weight is equal to and above 170 and weight is equal to and below 184, then print heavyweight
+else if(weight >= 170 && weight <= 184){
+  console.log("Middleweight");
+} 
+//if weight is equal to and above 155 and weight is equal to and below 169, then print heavyweight
+else if(weight >= 155 && weight <= 169){
+  console.log("Welterweight");
+} 
+//if weight is equal to and above 145 and weight is equal to and below 154, then print heavyweight
+else if(weight >= 145 && weight <= 154){
+  console.log("Lightweight")
+}
